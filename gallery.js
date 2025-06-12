@@ -11,12 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let currentIndex = 0;
 
-    // ✅ Toggle menu visibility for mobile screens
+    // Toggle menu visibility for mobile screens
     menuButton.addEventListener("click", () => {
         filterContainer.style.display = filterContainer.style.display === "none" ? "flex" : "none";
     });
 
-    // ✅ Image Filtering Functionality
+    // Image Filtering Functionality
     filterButtons.forEach(button => {
         button.addEventListener("click", () => {
             const filter = button.getAttribute("data-filter");
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // ✅ Lightbox Functionality (Open Image)
+    // Lightbox Functionality (Open Image)
     images.forEach((img, index) => {
         img.addEventListener("click", () => {
             lightbox.style.display = "flex";
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // ✅ Navigate to Previous Image
+    // Navigate to Previous Image
     prevButton.addEventListener("click", () => {
         if (currentIndex > 0) {
             currentIndex--;
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // ✅ Navigate to Next Image
+    // Navigate to Next Image
     nextButton.addEventListener("click", () => {
         if (currentIndex < images.length - 1) {
             currentIndex++;
@@ -52,20 +52,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // ✅ Fix Close Button Not Working Issue
+    // Fix Close Button Not Working Issue
     closeButton.addEventListener("click", (event) => {
         event.stopPropagation(); // Prevent interference from parent div
         lightbox.style.display = "none";
     });
 
-    // ✅ Close Lightbox when clicking outside the image
+    // Close Lightbox when clicking outside the image
     lightbox.addEventListener("click", (event) => {
         if (event.target !== lightboxImg && event.target !== prevButton && event.target !== nextButton) {
             lightbox.style.display = "none";
         }
     });
 
-    // ✅ Close Lightbox when pressing "Escape" key
+    // Close Lightbox when pressing "Escape" key
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape") {
             lightbox.style.display = "none";
