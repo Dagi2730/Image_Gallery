@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>Image Gallery</h1>
+        <button class="menu-btn">&#9776;</button>
+    </header>
+
+    <nav class="filter-container">
+        <button data-filter="all" class="filter-btn">All</button>
+        <button data-filter="nature" class="filter-btn">Nature</button>
+        <button data-filter="architecture" class="filter-btn">Architecture</button>
+        <button data-filter="art" class="filter-btn">Art</button>
+        <button data-filter="portrait" class="filter-btn">Portrait</button>
+        <button data-filter="culture" class="filter-btn">Culture</button>
+    </nav>
+
+    <div class="gallery">
+        <!-- Nature Images -->
+        <img src="gallery/nature1.jpg" alt="Nature" class="gallery-item" data-category="nature">
+        <img src="gallery/nature2.jpg" alt="Nature" class="gallery-item" data-category="nature">
+        <img src="gallery/nature3.jpg" alt="Nature" class="gallery-item" data-category="nature">
+        <img src="gallery/nature4.jpg" alt="Nature" class="gallery-item" data-category="nature">
+        <img src="gallery/nature5.jpg" alt="Nature" class="gallery-item" data-category="nature">
+        <img src="gallery/nature6.jpg" alt="Nature" class="gallery-item" data-category="nature">
+        <img src="gallery/nature7.jpg" alt="Nature" class="gallery-item" data-category="nature">
+        <img src="gallery/nature8.jpg" alt="Nature" class="gallery-item" data-category="nature">
+        <img src="gallery/nature9.jpg" alt="Nature" class="gallery-item" data-category="nature">
+        <img src="gallery/nature10.jpg" alt="Nature" class="gallery-item" data-category="nature">
+
+        <!-- Architecture Images -->
+        <img src="gallery/arc1.jpg" alt="Architecture" class="gallery-item" data-category="architecture">
+        <img src="gallery/arc2.jpg" alt="Architecture" class="gallery-item" data-category="architecture">
+        <img src="gallery/arc3.jpg" alt="Architecture" class="gallery-item" data-category="architecture">
+        <img src="gallery/arc4.jpg" alt="Architecture" class="gallery-item" data-category="architecture">
+        <img src="gallery/arc5.jpg" alt="Architecture" class="gallery-item" data-category="architecture">
+        <img src="gallery/arc6.jpg" alt="Architecture" class="gallery-item" data-category="architecture">
+        <img src="gallery/arc7.jpg" alt="Architecture" class="gallery-item" data-category="architecture">
+        <img src="gallery/arc8.jpg" alt="Architecture" class="gallery-item" data-category="architecture">
+        <img src="gallery/arc9.jpg" alt="Architecture" class="gallery-item" data-category="architecture">
+        <img src="gallery/arc10.jpg" alt="Architecture" class="gallery-item" data-category="architecture">
+
+        <!-- Art Images -->
+        <img src="gallery/art1.jpg" alt="Art" class="gallery-item" data-category="art">
+        <img src="gallery/art2.jpg" alt="Art" class="gallery-item" data-category="art">
+        <img src="gallery/art3.jpg" alt="Art" class="gallery-item" data-category="art">
+        <img src="gallery/art4.jpg" alt="Art" class="gallery-item" data-category="art">
+        <img src="gallery/art5.jpg" alt="Art" class="gallery-item" data-category="art">
+        <img src="gallery/art6.jpg" alt="Art" class="gallery-item" data-category="art">
+        <img src="gallery/art7.jpg" alt="Art" class="gallery-item" data-category="art">
+        <img src="gallery/art8.jpg" alt="Art" class="gallery-item" data-category="art">
+        <img src="gallery/art9.jpg" alt="Art" class="gallery-item" data-category="art">
+        <img src="gallery/art10.jpg" alt="Art" class="gallery-item" data-category="art">
+        <!-- Portrait Images -->
+        <img src="gallery/pepo1.jpg" alt="Portrait" class="gallery-item" data-category="portrait">
+        <img src="gallery/pepo2.jpg" alt="Portrait" class="gallery-item" data-category="portrait">
+        <img src="gallery/pepo3.jpg" alt="Portrait" class="gallery-item" data-category="portrait">
+        <img src="gallery/pepo4.jpg" alt="Portrait" class="gallery-item" data-category="portrait">
+        <img src="gallery/pepo5.jpg" alt="Portrait" class="gallery-item" data-category="portrait">
+        <img src="gallery/pepo6.jpg" alt="Portrait" class="gallery-item" data-category="portrait">
+        <img src="gallery/pepo7.jpg" alt="Portrait" class="gallery-item" data-category="portrait">
+        <img src="gallery/pepo8.jpg" alt="Portrait" class="gallery-item" data-category="portrait">
+        <img src="gallery/pepo9.jpg" alt="Portrait" class="gallery-item" data-category="portrait">
+        <img src="gallery/pepo10.jpg" alt="Portrait" class="gallery-item" data-category="portrait">
+
+        <!-- Culture Images -->
+        <img src="gallery/trav1.jpg" alt="Culture" class="gallery-item" data-category="culture">
+        <img src="gallery/trav2.jpg" alt="Culture" class="gallery-item" data-category="culture">
+        <img src="gallery/trav3.jpg" alt="Culture" class="gallery-item" data-category="culture">
+        <img src="gallery/trav4.jpg" alt="Culture" class="gallery-item" data-category="culture">
+        <img src="gallery/trav5.jpg" alt="Culture" class="gallery-item" data-category="culture">
+        <img src="gallery/trav6.jpg" alt="Culture" class="gallery-item" data-category="culture">
+        <img src="gallery/trav7.jpg" alt="Culture" class="gallery-item" data-category="culture">
+        <img src="gallery/trav8.jpg" alt="Culture" class="gallery-item" data-category="culture">
+        <img src="gallery/trav9.jpg" alt="Culture" class="gallery-item" data-category="culture">
+        <img src="gallery/trav10.jpg" alt="Culture" class="gallery-item" data-category="culture">
+    </div>
+
+<div class="lightbox">
+    <span class="close">&times;</span>
+    <img src="" class="lightbox-img">
+    <i class="bx bx-chevron-left prev"></i>
+    <i class="bx bx-chevron-right next"></i>
+</div>
+
+
+    <script src="gallery.js"></script>
+</body>
+</html>
